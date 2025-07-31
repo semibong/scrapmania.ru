@@ -16,6 +16,8 @@
     border: 1px $color-primary solid;
     border-radius: 3rem;
     transition: all .3s ease-in-out;
+    z-index: 1;
+    cursor: pointer;
 
     &.active, &:hover {
         color: #fff;
