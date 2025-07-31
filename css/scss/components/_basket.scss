@@ -1,0 +1,96 @@
+.basket {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    z-index: 1;
+
+    &__item {
+        &.trash {
+            a {
+                &:hover {
+                    svg path {
+                        stroke: $color-active;
+                    }
+                }
+
+                span {
+                    padding-left: 1.9rem;
+                }
+            }
+        }
+
+        &.chest {
+            a {
+                &:hover {
+                    svg path {
+                        fill: $color-active;
+                    }
+                }
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            transition: all .1s linear;
+
+            &:hover {
+                &, p, span {
+                    color: $color-active;
+                }
+            }
+
+            svg {
+                width: 2.9rem;
+                height: 2.9rem;
+                margin-right: 0.2rem;
+
+                path {
+                    transition: all .1s linear;
+                }
+            }
+
+            p {
+                font-family: $font-second;
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: $color-secondary;
+                transition: all .1s linear;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                color: $color-secondary;
+                display: flex;
+                align-items: center;
+                padding-left: 1rem;
+                transition: all .1s linear;
+
+                i {
+                    font-family: $font-main;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: url(../images/svg/basket-amount-bg.svg) no-repeat center / contain;
+                    width: 2.6rem;
+                    height: 2.6rem;
+                    margin-right: 0.4rem;
+                }
+
+                b {
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    color: $color-active;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}

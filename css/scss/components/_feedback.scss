@@ -1,0 +1,25 @@
+.feedback {
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 3rem;
+    color: $color-primary;
+    position: relative;
+    padding-left: 3.3rem;
+    transition: all .1s linear;
+
+    &:hover {
+        color: $color-active;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url(../images/svg/feedback.svg) no-repeat center / contain;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+    }
+}

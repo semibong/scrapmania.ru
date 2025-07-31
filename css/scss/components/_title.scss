@@ -1,0 +1,73 @@
+.title {
+    position: relative;
+    max-width: 34.5rem;
+    width: 100%;
+    padding-top: 5.4rem;
+    padding-left: 1.5rem;
+    margin-bottom: 4rem;
+    z-index: 1;
+
+    @media #{$lg} {
+        margin-bottom: 2.5rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: calc(100% - 2.5rem);
+        height: 2px;
+        background: url(../images/svg/title-decor-3.svg) repeat-x top left;
+        top: 4.1rem;
+        left: 0;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: 1.2rem;
+        z-index: -1;
+        background: url(../images/svg/title-decor-4.svg) no-repeat center / contain;
+        transform: translateY(-50%);
+        top: 4.2rem;
+        right: 0;
+    }
+
+    span {
+        font-family: $font-second;
+        font-weight: 600;
+        font-size: 2.4rem;
+        color: $color-primary;
+        position: relative;
+        display: flex;
+        width: fit-content;
+        background: url(../images/title-bg.jpg) repeat top left;
+        box-sizing: border-box;
+        padding: 0 1.4rem 0.5rem;
+        border: 2px #494949 solid;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 11.3rem;
+            height: 6rem;
+            background: url(../images/svg/title-decor-1.svg) no-repeat center / contain;
+            transform: translateY(-100%);
+            z-index: -1;
+            top: 0.4rem;
+            left: -1.4rem;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0.8rem;
+            height: 1.8rem;
+            background: url(../images/svg/title-decor-2.svg) no-repeat center / contain;
+            transform: translateY(-100%);
+            z-index: -1;
+            top: 0.4rem;
+            right: 1.8rem;
+        }
+    }
+}

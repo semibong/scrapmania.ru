@@ -1,0 +1,10 @@
+.content {
+    float: left;
+    flex-grow: 1;
+    padding: 2.7rem 5.5rem 0;
+
+    @media #{$lg} {
+        float: none;
+        padding: 0;
+    }
+}

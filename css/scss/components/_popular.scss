@@ -1,0 +1,8 @@
+.popular {
+    position: relative;
+
+    @media #{$lg} {
+        padding-bottom: 4rem;
+        margin-bottom: 3rem;
+    }
+}

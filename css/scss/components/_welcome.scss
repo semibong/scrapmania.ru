@@ -1,0 +1,36 @@
+.welcome {
+    margin-bottom: 5rem;
+
+    @media #{$lg} {
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        p {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: #000;
+            margin-bottom: 2.2rem;
+
+            &:first-of-type {
+                font-size: 2rem;
+                color: $color-primary;
+
+                @media #{$lg} {
+                    font-size: 1.6rem;
+                    color: #000;
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $color-active;
+        }
+    }
+}

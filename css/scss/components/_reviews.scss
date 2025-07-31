@@ -1,0 +1,112 @@
+.reviews {
+    position: relative;
+    margin-bottom: 5rem;
+
+    @media #{$lg} {
+        padding-bottom: 6rem;
+    }
+
+    &__card {
+        &__date {
+            font-family: $font-main;
+            font-size: 2rem;
+            color: $color-active;
+        }
+
+        h3 {
+            font-family: $font-second;
+            font-weight: 400;
+            font-size: 2.4rem;
+            color: #000;
+            margin-bottom: 1.6rem;
+        }
+
+        p {
+            font-family: $font-main;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: #000;
+        }
+    }
+
+    &__sources {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 2rem 3.5rem;
+        border-radius: 2.5rem;
+        margin-bottom: 3.8rem;
+
+        @media #{$lg} {
+            flex-direction: column;
+            gap: 0.5rem;
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+        }
+    }
+
+    &__source {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        @media #{$lg} {
+            width: 100%;
+            background-color: #fff;
+            box-sizing: border-box;
+            padding: 1.3rem 1.2rem 1.3rem 2rem;
+            border-radius: 2.5rem;
+        }
+
+        &__logo {
+            object-fit: contain;
+            object-position: center;
+            
+            @media #{$lg} {
+                margin-right: auto;
+            }
+        }
+
+        &__rating {
+            font-weight: 700;
+            font-size: 3.5rem;
+            color: #51B539;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 1.6rem;
+                color: #50708A;
+            }
+        }
+
+        &__stars {
+            width: 8.2rem;
+            height: 1.2rem;
+            background: url(../images/svg/star.svg) repeat-x left top;
+            background-size: 1.7rem 1.1rem;
+
+            &_current {
+                width: 0;
+                height: 1.2rem;
+                background: url(../images/svg/star-active.svg) repeat-x left top;
+                background-size: 1.7rem 1.1rem;
+            }
+        }
+    }
+
+    .swiper {
+        margin-bottom: 4.5rem;
+
+        @media #{$lg} {
+            margin-bottom: 2rem;
+        }
+    }
+}

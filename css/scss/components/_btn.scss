@@ -1,0 +1,116 @@
+.btn {
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $color-primary;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    background: linear-gradient(90deg, rgba(#fff, 0.5) 50%, $color-active 51%, $color-primary 100%);
+    background-size: 220%;
+    box-sizing: border-box;
+    padding: 0 1.8rem;
+    border: 1px $color-primary solid;
+    border-radius: 3rem;
+    transition: all .3s ease-in-out;
+
+    &.active, &:hover {
+        color: #fff;
+        background-position: right;
+    }
+
+    &-more {
+        font-weight: 400;
+        font-size: 1.6rem;
+        width: max-content;
+        height: 4rem;
+        background: #fff;
+        padding: 0 4.5rem 0 3rem;
+        border: none;
+        border-radius: 1rem;
+
+        @media #{$lg} {
+            width: calc(100% - 3rem);
+            background: rgba(#136E83, 0.3);
+        }
+
+        &.active, &:hover {
+            color: $color-active;
+
+            &::before {
+                opacity: 0;
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 0.5rem;
+            height: 0.8rem;
+            transition: all .3s ease-in-out;
+            transform: translateY(-50%);
+            top: 50%;
+            right: 2.7rem;
+        }
+
+        &::before {
+            background: url(../images/svg/btn-more-arrow.svg) no-repeat center / contain;
+            opacity: 1;
+        }
+
+        &::after {
+            background: url(../images/svg/btn-more-arrow-active.svg) no-repeat center / contain;
+            opacity: 0;
+        }
+    }
+
+    &-aside-more {
+        color: #83A4AD;
+        width: max-content;
+        background: transparent;
+        padding: 0 1.4rem 0 0;
+        border: none;
+        border-radius: 0;
+        margin: 0 auto;
+
+        &.active, &:hover {
+            color: $color-active;
+
+            &::before {
+                opacity: 0;
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+        
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 0.6rem;
+            height: 0.9rem;
+            transition: all .3s ease-in-out;
+            transform: translateY(-50%);
+            top: 50%;
+            right: 0;
+        }
+
+        &::before {
+            background: url(../images/svg/btn-aside-more-arrow.svg) no-repeat center / contain;
+            opacity: 1;
+        }
+
+        &::after {
+            background: url(../images/svg/btn-aside-more-arrow-active.svg) no-repeat center / contain;
+            opacity: 0;
+        }
+    }
+}

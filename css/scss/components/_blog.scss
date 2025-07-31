@@ -1,0 +1,13 @@
+.blog {
+    position: relative;
+    margin-bottom: 5rem;
+
+    @media #{$lg} {
+        padding-bottom: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .title {
+        max-width: 40rem;
+    }
+}

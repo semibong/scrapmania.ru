@@ -1,0 +1,43 @@
+.nav {
+    display: flex;
+    gap: 6rem;
+
+    @media #{$lg} {
+        gap: 2.5rem;
+    }
+
+    &__group {
+        &>a {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            color: $color-primary;
+
+            @media #{$lg} {
+                font-weight: 500;
+                line-height: 2rem;
+            }
+        }
+
+        a {
+            &:hover {
+                color: $color-active;
+            }
+        }
+
+        nav {
+            ul {
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    &, a {
+                        font-size: 1.4rem;
+                        line-height: 2.5rem;
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}

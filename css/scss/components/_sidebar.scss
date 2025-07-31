@@ -1,0 +1,68 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    top: 21.5rem;
+    right: 2.2rem;
+
+    @media #{$lg} {
+        display: none;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 9.6rem;
+        height: 9.7rem;
+        background: url(../images/sidebar/sidebar-decor.png) no-repeat center / contain;
+        pointer-events: none;
+        z-index: -1;
+        rotate: 17deg;
+        top: 0;
+        right: 1.2rem;
+    }
+
+    &__item {
+        width: 6.4rem;
+        height: 6.4rem;
+        background: url(../images/sidebar/sidebar-item-bg.png) no-repeat center / contain;
+
+        &:first-of-type {
+            &:hover {
+                a {
+                    svg path {
+                        stroke: $color-active;
+                    }
+                }
+            }
+        }
+
+        &:last-of-type {
+            &:hover {
+                a {
+                    svg path {
+                        fill: $color-active;
+                    }
+                }
+            }
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            svg {
+                width: 2rem;
+                height: 2rem;
+
+                path {
+                    transition: all .1s linear;
+                }
+            }
+        }
+    }
+}

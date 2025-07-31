@@ -1,0 +1,72 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+    margin-bottom: 5rem;
+
+    @media #{$lg} {
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-sizing: border-box;
+        max-width: 16.6rem;
+        width: 100%;
+
+        h3 {
+            font-family: $font-second;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+            color: $color-primary;
+            padding: 0.6rem 0.6rem 0.4rem;
+        }
+
+        &__image {
+            display: flex;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            border: 0.5rem #fff solid;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        a {
+            font-family: $font-main;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: #72919A;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: 2.5rem;
+            background-color: rgba(#fff, 0.9);
+            box-sizing: border-box;
+            padding: 0 1.2rem 0.2rem;
+            border-radius: 2.5rem;
+            transition: all .1s linear;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: 0.8rem;
+
+            &:hover {
+                color: $color-active;
+            }
+        }
+    }
+}
