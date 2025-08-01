@@ -98,10 +98,15 @@
             }
 
             a {
+                transition: all .1s linear;
                 position: relative;
 
                 @media #{$lg} {
                     padding-right: 2.2rem;
+                }
+
+                &:hover {
+                    color: $color-active;
                 }
 
                 &::before {
@@ -163,10 +168,14 @@
                 background-color: rgba(#fff, 0.8);
                 box-sizing: border-box;
                 padding-left: 1.5rem;
+                transition: all .1s linear;
 
                 &.active, &:hover {
-                    font-weight: 500;
                     color: $color-active;
+                }
+
+                &.active {
+                    font-weight: 500;
                 }
             }
         }

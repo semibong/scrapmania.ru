@@ -62,8 +62,13 @@
         padding: 0;
         border: none;
         cursor: pointer;
+        transition: all .3s ease-in-out;
         top: 2rem;
         right: 2.5rem;
+
+        &:hover {
+            rotate: 180deg;
+        }
     }
 
     &__logo {

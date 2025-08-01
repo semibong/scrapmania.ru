@@ -40,7 +40,8 @@
         }
 
         &.active, &:hover {
-            color: $color-active;
+            color: #fff;
+            background-color: $color-active;
 
             &::before {
                 opacity: 0;
@@ -68,7 +69,7 @@
         }
 
         &::after {
-            background: url(../images/svg/btn-more-arrow-active.svg) no-repeat center / contain;
+            background: url(../images/svg/btn-more-arrow-active-2.svg) no-repeat center / contain;
             opacity: 0;
         }
     }

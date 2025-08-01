@@ -42,4 +42,26 @@
             display: none;
         }
     }
+
+    button {
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: #fff;
+        position: absolute;
+        height: calc(100% - 0.8rem);
+        background-color: $color-primary;
+        box-sizing: border-box;
+        padding: 0 3.2rem;
+        border: none;
+        border-radius: 5rem;
+        margin: 0.4rem 0;
+        cursor: pointer;
+        transition: all .1s linear;
+        top: 0;
+        right: 0.4rem;
+
+        &:hover {
+            background-color: $color-active;
+        }
+    }
 }

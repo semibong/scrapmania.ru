@@ -1,0 +1,17 @@
+.catalog {
+    margin-bottom: 7rem;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.4rem 2rem;
+
+        @media #{$lg} {
+            gap: 2.4rem;
+        }
+
+        @media #{$sm} {
+            gap: 1.3rem;
+        }
+    }
+}
