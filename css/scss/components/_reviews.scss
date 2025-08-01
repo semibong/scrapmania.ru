@@ -88,16 +88,16 @@
         }
 
         &__stars {
-            width: 8.2rem;
+            width: 8.5rem;
             height: 1.2rem;
             background: url(../images/svg/star.svg) repeat-x left top;
-            background-size: 1.7rem 1.1rem;
+            background-size: 1.7rem 1.2rem;
 
             &_current {
                 width: 0;
                 height: 1.2rem;
                 background: url(../images/svg/star-active.svg) repeat-x left top;
-                background-size: 1.7rem 1.1rem;
+                background-size: 1.7rem 1.2rem;
             }
         }
     }
